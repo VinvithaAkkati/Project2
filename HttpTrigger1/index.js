@@ -44,6 +44,7 @@ module.exports = async function (context, req) {
 
         const user = result.recordset[0];
         //{"email":"vinvitha.reddy@gmail.com","password":"12345"}//result.recordset[0];
+        //{email3}
         if (password === user.password) {
             context.res = {
                 status: 200,
